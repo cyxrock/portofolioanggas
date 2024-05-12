@@ -118,7 +118,6 @@
         position: static;
         transform: none;
         text-align: center;
-        padding: 1rem; /* Sesuaikan padding */
     }
 
     .carousel-item img {
@@ -166,10 +165,10 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .carousel-caption {
         position: absolute;
-        transform: translateY(-50%);
+        transform: translateY(-10%);
         text-align: center;
         top: 50%;
         left: 0;
@@ -177,7 +176,7 @@
     }
     .carousel-caption h4,
     .carousel-caption h3 {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 }
 
