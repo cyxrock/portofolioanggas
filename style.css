@@ -1,0 +1,201 @@
+.lingkaran {
+    display: inline-block;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    color: #fff;
+    background-color: #6c757d;
+}
+
+.lingkaran i {
+    position: relative;
+    top: 30px;
+}
+
+.crop-img {
+    object-fit: cover;
+}
+
+.kontak {
+    background: url("https://wallpapercave.com/wp/wp2747935.jpg") no-repeat center center;
+    background-size: cover;
+    padding-bottom: 20%;
+    padding-top: 20%;
+    color: #fff;
+}
+
+.caption {
+    padding-bottom: 20%;
+    padding-top: 20%;
+}
+
+.slide {
+    padding-bottom: 10%;
+}
+
+.nav-color {
+    background-color: #6c757d;
+    transition: all ease-in-out .5s;
+}
+
+.bg-transparent {
+    transition: all ease-in-out .5s;
+}
+
+
+.navbar-toggler:hover {
+    background-color: #6c757d;
+}
+
+.navbar-collapse:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ffffff;
+}
+
+@media (min-width: 200px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #fff;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before {
+        width: 100%;
+        visibility: visible;
+    }
+
+    /* Move the carousel-item::before styles inside the media query */
+    .carousel-item::before {
+        background-color: rgba(0, 0, 0, 0.6);
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+
+    .container-fluid.pt-5.pb-5 {
+        padding-top: 10vh; /* Ubah padding sesuai dengan ukuran layar */
+        padding-bottom: 10vh; /* Ubah padding sesuai dengan ukuran layar */
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        font-size: 0.75rem; /* Sesuaikan ukuran font */
+        padding: 0.25rem 0.5rem; /* Sesuaikan padding */
+    }
+
+    .navbar-collapse {
+        font-size: 1rem; /* Sesuaikan ukuran font */
+        padding: 0.5rem; /* Sesuaikan padding */
+    }
+
+    .carousel-caption {
+        position: static;
+        transform: none;
+        text-align: center;
+        padding: 1rem; /* Sesuaikan padding */
+    }
+
+    .carousel-item img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .angga img {
+        max-width: 80%; /* Sesuaikan lebar maksimum */
+        height: auto;
+        border: 7px solid #cccccc;
+    }
+
+    a.social {
+        width: 30px; /* Sesuaikan ukuran ikon sosial media */
+        height: 30px; /* Sesuaikan ukuran ikon sosial media */
+        line-height: 30px; /* Sesuaikan ukuran ikon sosial media */
+    }
+
+    .client img {
+        max-width: 100%; /* Sesuaikan ukuran logo klien */
+        height: auto;
+    }
+
+    .card.crop-img {
+        width: 100%;
+    }
+    .carousel-caption h4,
+    .carousel-caption h3,
+    .carousel-caption a.btn {
+        margin-bottom: 20px; /* Sesuaikan jarak antara elemen */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    .navbar-nav {
+        margin-top: 10px;
+    }
+    .navbar-toggler {
+        font-size: 1.2rem;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        position: absolute;
+        transform: translateY(-50%);
+        text-align: center;
+        top: 50%;
+        left: 0;
+        right: 0;
+    }
+    .carousel-caption h4,
+    .carousel-caption h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .card.crop-img {
+        width: 100%;
+    }
+    .card-title {
+        font-size: 1.2rem;
+    }
+    .card-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .kontak input,
+    .kontak textarea {
+        width: 100%;
+    }
+}
